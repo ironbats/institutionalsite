@@ -9,11 +9,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MakroCustomerController {
 
 
+    @GetMapping
+    public String customerPageStep1() {
+
+        return "customerRegistrationBRStep1";
+    }
 
     @GetMapping
-    public String customerPage(){
+    public String customerPageStep2() {
 
-        return "customerRegistrationBR";
+        return "customerRegistrationBRStep2";
+    }
+
+
+    @GetMapping
+    public String customerPageStep3() {
+
+        return "customerRegistrationBRStep3";
+    }
+
+    @GetMapping
+    public String customerPageStep4() {
+
+        return "customerRegistrationBRStep4";
     }
 
 

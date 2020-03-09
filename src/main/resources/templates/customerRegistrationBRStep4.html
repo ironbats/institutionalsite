@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="stepsNav">
+    <div class="stepBullet stepBullet--active">
+        <span class="stepBullet_num">1</span><img src="/_ui/responsive/theme-makro-customer/images/customerRegistration/u11.svg" class="stepBullet_connect" />
+    </div>
+    <div class="stepBullet">
+        <span class="stepBullet_num">2</span><img src="/_ui/responsive/theme-makro-customer/images/customerRegistration/u11.svg"  class="stepBullet_connect"  />
+    </div>
+    <div class="stepBullet">
+        <span class="stepBullet_num">3</span><img src="/_ui/responsive/theme-makro-customer/images/customerRegistration/u11.svg"  class="stepBullet_connect"  />
+    </div>
+    <div class="stepBullet">
+        <span class="stepBullet_num">4</span>
+    </div>
+</div>
+
+<form class="step1Form" novalidate="true" action="none">
+    <div class="btn-group formContainer__radio" data-toggle="buttons">
+        <div class="radio" id="optionsRadios1">
+            <label class="formContainer__text">
+                <input type="radio" name="optionsRadios"  value="0" checked> type 1
+            </label>
+        </div>
+        <div class="radio" id="optionsRadios2">
+            <label class="formContainer__text">
+                <input type="radio" name="optionsRadios" value="1">type2
+            </label>
+        </div>
+    </div>
+
+
+
+    <div class="row" regularCustomer="true">
+        <div class="form-group">
+            <label class="formContainer__text">Doc1</label>
+            <input type="text" class="form-control formContainer__input inputCPF" id="customerCpf" name="customerDocCpf" placeholder="docCpf">
+        </div>
+    </div>
+
+    <div class="row" businessCustomer="true">
+        <div class="form-group">
+            <label class="formContainer__text">doc2</label>
+            <input type="text" class="form-control formContainer__input inputCNPJ" id="customerCnpj" name="customerDocCnpj"  placeholder="<spring:theme code="registration.customer.doc2.label"/>">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <label class="formContainer__text">Social</label>
+            <input type="text" class="form-control formContainer__input" id="customerSocialName" name="customerSocialName" placeholder="<spring:theme code="registration.customer.social.name.label"/>">
+        </div>
+    </div>
+    <div class="row" regularCustomer="true">
+        <div class="checkbox">
+            <label class="formContainer__text checkText">
+                <input type="checkbox" class="form-checkbox  isBusiness" id="customerIsB2b">
+               label</label>
+        </div>
+    </div>
+    <div id="businessEndCustomer" class="is-end-customer" businessCustomer="true">
+        <div class="row">
+            <div class="form-group">
+                <label class="form-text">label 1</label>
+                <select type="text" class="form-control formContainer__input" id="customerBusinessType1" name="customerBusinessType1Val" required>
+                    <option value="" disabled selected>Selecione uma</option>
+
+                </select>
+
+            </div>
+        </div>
+
+
+        <div class="row optionBusiness2 hidden " >
+            <div class="form-group">
+                <label class="form-text">Label 2</label>
+                <select class="form-control formContainer__input " id="customerBusinessType2" name="customerBusinessType2Val" required>
+                    <option value="" disabled="" selected="">Selecione uma</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="formContainer__button row">
+        <button class="btn btn-lg formContainer__button_steps btnStep1 btn-submit">BTN 1</button>
+    </div>
+
+</form>
+
+
+</body>
+</html>
