@@ -15,20 +15,20 @@ public class MakroCustomerController {
         return "customerRegistrationBRStep1";
     }
 
-    @GetMapping
+    @GetMapping("/step2")
     public String customerPageStep2() {
 
         return "customerRegistrationBRStep2";
     }
 
 
-    @GetMapping
+    @GetMapping("/step3")
     public String customerPageStep3() {
 
         return "customerRegistrationBRStep3";
     }
 
-    @GetMapping
+    @GetMapping("/step4")
     public String customerPageStep4() {
 
         return "customerRegistrationBRStep4";
